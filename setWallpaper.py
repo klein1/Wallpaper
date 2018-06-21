@@ -1,5 +1,4 @@
 # coding:utf8
-from PIL import Image
 import win32api, win32con, win32gui
 import re, os, sys, argparse
 from drawText import *
@@ -45,7 +44,7 @@ def main():
     print('index:',i)
     text = oneCita(i)
     path,image = oneImagen(i)
-    dir = os.getcwd() + '\\' +path
+    dir = '.\\' +path
     newImg = drawText(dir,text)
     # newImg.show()
     set_wallpaper(newImg)

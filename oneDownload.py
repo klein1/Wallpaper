@@ -73,7 +73,7 @@ def oneImagen(i):
 def downloadImg(i,url):
     web = urllib.request.urlopen(url)
     data = web.read()
-    dir = 'one_img\\'+str(i)+'.jpg'
+    dir = '.\\one_img\\'+str(i)+'.jpg'
     f = open(dir, "wb")
     f.write(data)
     f.close()
